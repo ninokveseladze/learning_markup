@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my website</title>
+  </head>
+  <body>
+    <!-- Header related staff -->
+    <h1>welcome to my website</h1>
+    <p>this is my very first website</p>
+    <p>I am very smart developer</p>
+    <button id="submit-button">Click me</button>
+
+    <h3>Hello :</h3>
+    <!-- Content related staff -->
+    <script>
+      let submit = document.getElementById('submit-button');
+      submit.addEventListener('click', function () {
+        let name = prompt('Enter your name');
+        let result = document.getElementsByTagName('h3')[0];
+        result.textContent = `Hello ${name}`;
+        // console.log(name);
+      });
+
+      // console.log('Hello nano');
+    </script>
+  </body>
+</html>

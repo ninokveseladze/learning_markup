@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms and inputs</title>
+    <style>
+      div {
+        /* border: 1px solid red; */
+      }
+    </style>
+  </head>
+  <body>
+    <form action="process.php">
+      <input type="hidden" id="user_id" value="1012" name="user_id" />
+      <div>
+        <label for="name">Name </label>
+        <input type="text" id="name" name="username" pattern="[A-Za-z]" />
+      </div>
+
+      <div>
+        <label for="email">Email </label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="full_message">Message</label><br />
+        <textarea name="message" id="full_message" cols="50" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="gender_select">Gender</label><br />
+        <select name="gender" id="gender_select">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" />
+      </div>
+
+      <div>
+        <label for="">Date</label><br />
+        <input type="date" name="date" id="" />
+      </div>
+
+      <div>
+        <h3>Banks</h3>
+        <label for="TBC">TBC</label>
+        <input type="radio" name="bank" value="TBC" id="TBC" /> <br />
+        <label for="LB">LB</label>
+        <input type="radio" name="bank" value="LB" id="LB" /> <br />
+        <label for="Bog">Bog</label>
+        <input type="radio" name="bank" value="Bog" id="Bog" />
+      </div>
+
+      <div>
+        <label for="">Choose Currency</label>
+        <input type="checkbox" name="" id="" /> GEL <input type="checkbox" name="" id="" /> USD
+        <input type="checkbox" name="" id="" /> EUR <input type="checkbox" name="" id="" /> GBP
+        <input type="checkbox" name="" id="" /> TRY
+      </div>
+
+      <div>
+        <button type="submit">Send email</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+  </body>
+</html>
